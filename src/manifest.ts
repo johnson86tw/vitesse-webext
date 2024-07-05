@@ -38,7 +38,7 @@ export async function getManifest() {
 		host_permissions: ['*://*/*'],
 		content_scripts: [
 			{
-				matches: ['<all_urls>'],
+				matches: ['*://*.chatgpt.com/*'],
 				js: ['dist/contentScripts/index.global.js'],
 			},
 		],
